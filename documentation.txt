@@ -1,0 +1,73 @@
+10/05/2022
+    - Succesfully convert as many files as can fit into the text box
+    - App works to requirements. Any new improvements are for practice and to 
+    make the app nicer.
+    TO DO:
+        - Add a scroll bar so many files can be converted at once
+        - Make the GUI look nicer
+        - Make it so you don't paste the paths of files, insstead you can drag the photo
+        - *Any new recomendations welcome to improve app. 
+	- Add PDF Merger ability
+
+11/05/2022
+    - Added functionality to drag and drop files into the text box
+	TO DO:
+        - Add a scroll bar so many files can be converted at once
+        - Make the GUI look nicer
+        - *Any new recomendations welcome to improve app. 
+	- Add PDF Merger ability
+	- Change textbox to listbox????
+	- remove the "fileName.upper()" in PDFfuncs.py file
+	- Save converted files into a separate folder
+
+12/05/2022
+    - Added Scrollbar to Textbox by changing into a ScrolledText widget. From tkinter.scrolledText 
+	imported ScrolledText
+    - Changed to inputBox into a listbox, trying to add scroller. Added a scrollbar to the side of
+	the window, trying to add it to side of listbox. Was able to remove the import just done.
+    - Ability to select multiple items from scrollBox, need to add ability to print and convert
+	all selections.
+    - Added ability to convert files added to listBox. Getting error because last element in the split
+	list (in PDFfuncs) is blank string
+    - Fixed error from above by stripping the "\n" from the end of the totalString in "button_pressed" func
+	TO DO:
+        - Make the GUI look nicer
+        - *Any new recomendations welcome to improve app. 
+	    - Add PDF Merger ability
+	    - remove the "fileName.upper()" in PDFfuncs.py file
+	    - Save converted files into a separate folder
+13/05/2022
+    - Removed ".upper" from filename when saving image
+    - Added "Remove" button to remove selected files.
+	***Error while adding remove button*** -> for loop used to delete inputBox index, however when one was
+			being deleted, the value of curselection was pointing to a different object in the list
+    - Fixed Error, remove button works as intended.
+    - added "sorted(events)" to 'drop_inside_listbox' function.
+	TO DO:
+	- Save converted files into a separate folder
+    	- Make the GUI look nicer
+    	- *Any new recomendations welcome to improve app. 
+	- Add PDF Merger ability
+20/05/2022
+    - Changed window size and made it not resizable
+    - Added ability to verify if its possible to merge pdfs (ie checks if any are images)
+    - Added ability to merge PDFs
+	TO DO:
+	- See image instead of path
+	- Drag to move position of file
+	- Save converted files into a separate folder
+    	- Make the GUI look nicer
+    	- *Any new recomendations welcome to improve app.
+23/05/2022
+    - Converted files now save to a new folder
+    - Conversions and merges saved into their own folders
+	TO DO:
+	- At the moment, file name wont save properly if there is a full stop in it. Maybe fix
+	- See image instead of path
+	- Drag to move position of file
+    	- Make the GUI look nicer
+	- Add ability to name file when merging
+
+
+
+
