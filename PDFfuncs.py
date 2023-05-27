@@ -1,5 +1,5 @@
 from PIL import Image
-from PyPDF2 import PdfFileMerger
+from PyPDF2 import PdfMerger
 import os
 
 def convert_and_save(text):
@@ -30,7 +30,7 @@ def mergePDFs(text):
     Paths = text.split("\n")
     fileName = getFileName(Paths[0])
         # CLEANING UP THE PATH FILE SO CODE CAN UNDERSTAND & SAVING CONVERTED FILES
-    merger = PdfFileMerger()
+    merger = PdfMerger()
     for path in Paths:
         path = path.replace("\\", "/")
         path = path.strip("\"")
