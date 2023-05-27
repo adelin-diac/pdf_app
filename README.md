@@ -10,7 +10,7 @@ To be able to run it using the automation script, please ensure that you have th
 
 - Python 3.6+
 - pip
-- virtualenv (optional - if not used then packages will be installed globally)
+- virtualenv (optional - if not used then packages will have to be installed globally)
 - TkDND [install from here](https://github.com/petasis/tkdnd/releases)
 - TKinterDnD2 [install from here](https://sourceforge.net/projects/tkinterdnd/files/)
 
@@ -22,7 +22,7 @@ To be able to run it using the automation script, please ensure that you have th
 
 2. If using a different machine, the neccesary version can be found on github [here](https://github.com/petasis/tkdnd/releases).
 
-3. Once you have installed and unzipped the folder, it must be added to the `tcl` directory in your Python installation. On Windows, this can noramlly be found in `C:\Users\{username}\AppData\Local\Programs\Python\Python{version}\tcl`. Just copy the `tkdnd2.9.2` (or whatever version you isntalled) folder into the `tcl` folder.
+3. Once you have installed and unzipped the folder, it must be added to the `tcl` directory in your Python installation. On Windows, this can noramlly be found in `C:\Users\{username}\AppData\Local\Programs\Python\Python{version}\tcl`. Just copy the `tkdnd2.9.2` (or whatever version you installed) folder into the `tcl` folder.
 
 ### TKinterDnD2
 
@@ -30,11 +30,11 @@ This is a wrapper package to the one we just installed. This can be downloaded f
 
 Once downloaded and unzipped, you have two options:
 
-1. You can add it to your `site-packages` folder in your Python installation. On Windows, this can normally be found in `C:\Users\{username}\AppData\Local\Programs\Python\Python{version}\Lib\site-packages`. Just copy the `TkinterDnD2` folder into the `site-packages` folder.
+1. You can add it to your `site-packages` folder in your Python installation. On Windows, this can normally be found in `C:\Users\{username}\AppData\Local\Programs\Python\Python{version}\Lib\site-packages`. Just copy the `TkinterDnD2` folder into the `site-packages` folder. This installs the package **globally**.
 
 **OR**
 
-2. You can add it into the `site-packages` folder in your virtual environment. Just copy the `TkinterDnD2` folder into the `venv\Lib\site-packages` folder. To create the virtualenvironment in this repo, you can do the following:
+2. You can add it into the `site-packages` folder in your virtual environment. Just copy the `TkinterDnD2` folder into the `venv\Lib\site-packages` folder. This installs the package **in the virtual environment only**. To create the virtualenvironment in this repo, you can do the following:
 
 ```bash
 virtualenv venv
