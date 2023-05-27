@@ -1,6 +1,5 @@
 from PIL import Image
 from PyPDF2 import PdfFileMerger
-from os import path 
 import os
 
 def convert_and_save(text):
