@@ -29,7 +29,7 @@ def drop_inside_listbox(event):
         pass
     else:
         events = event.data.split(" ")
-    events = sorted(events)
+    # events = sorted(events)
     for ev in events:
         ev += '\n'
         inputBox.insert("end", ev)
